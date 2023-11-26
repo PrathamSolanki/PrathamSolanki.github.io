@@ -1,0 +1,18 @@
+# Site settings
+title: Pratham Solanki's blog
+email: 
+description: "Teaching machines how to learn."
+baseurl: ""
+url: "https://prathamsolanki.github.io"
+github_username:  prathamsolanki
+linkedin_username: prathamsolanki
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge

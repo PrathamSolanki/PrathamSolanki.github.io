@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <br>
+        {{ post.excerpt }}
+
+        <!-- Disqus comment count script for each post -->
+        <!-- <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">Comments</a>
+        <script id="dsq-count-scr" src="//prathamsolanki.disqus.com/count.js" async></script> -->
+
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
